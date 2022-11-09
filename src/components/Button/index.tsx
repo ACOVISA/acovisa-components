@@ -1,17 +1,17 @@
-import Button from '@material-ui/core/Button';
+import ButtonMaterial from '@material-ui/core/Button';
 
 import { ButtonProps } from './@types/Button';
 
-export function Buttons(props: ButtonProps) {
+export function Button(props: ButtonProps) {
   return (
     <div >
-        <Button
+        <ButtonMaterial
             variant={props.variant}
             color={props.color}
             onClick={props.onClick}
         >
             {props.title}
-        </Button>
+        </ButtonMaterial>
     </div>
   );
 }
