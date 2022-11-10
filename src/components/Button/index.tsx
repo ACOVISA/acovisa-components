@@ -19,6 +19,10 @@ export function Button(props: ButtonProps) {
         background:  props.backgroundHover,
         transition: "0.5s ease-in-out",
       },
+      "&:focus": {
+        border: "1px solid #C8D8EB",
+        transition: "none",
+      },
     },
     label: {
       textTransform: "capitalize",
